@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FAMA</title>
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Permanent+Marker&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Permanent+Marker&family=Signika:wght@300..700&display=swap"
+    rel="stylesheet">
+
+  <!-- Icon CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+
+<!-- ⁠Maryam Akram WMA-202302
+    “ About Us Section” -->
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">fama.</a>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown mx-4">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Product
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item " href="product.html"><button type="button" class="btn navbutton">Shop
+                                            now</button></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="contact.html">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <button type="submit" class="btn"><img src="assets/cart.png" alt="cart logo" width="20"></button>
+
+            <!-- Login Popover -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#loginModal">
+                <img src="assets/login.png" alt="login logo" width="20">
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-center" id="loginModalLabel">Login</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="loginForm">
+                                <div class="mb-3">
+                                    <label for="username" class="form-label">Username</label>
+                                    <input type="text" class="form-control" id="username" name="username" required
+                                        placeholder="Enter Username">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="password" name="password" required
+                                        placeholder="Enter Password">
+                                </div>
+                                <button type="submit" class="btn navbutton">Login</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search Popover -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#searchModal">
+                <img src="assets/search.png" alt="login logo" width="20">
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="loginModalLabel">Search</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="searchForm">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="username" name="username" required
+                                        placeholder="Search">
+                                </div>
+                                <button type="submit" class="btn navbutton">search</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        </div>
+    </nav>
+
+    <div class="section section-1">
+        <img src="assets/background.jpg" class="w-100">
+    </div>
+
+    <div class="container mt-4">
+        <h1 class="text-center">ABOUT US</h1>
+        <hr>
+    </div>
+    <section class="about-us py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <img src="assets/about.png" class="img-fluid rounded w-100" alt="Cosmetics Store">
+                </div>
+                <div class="col-md-6 mt-5">
+                    <h2 class="text-center">Welcome to FAMA Cosmetics</h2>
+                    <p>We are dedicated to providing the best cosmetics products to enhance your beauty. Our journey
+                        began with a passion for beauty and a commitment to quality. We offer a wide range of
+                        products, including skincare, makeup, and fragrances, sourced from top brands around the
+                        world.</p>
+                    <p>Our mission is to empower our customers to look and feel their best by offering exceptional
+                        products and personalized service. We believe that beauty is more than skin deep, and our
+                        products are designed to nurture both the body and the spirit.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="overlay text-center py-5">
+                <h1 class="overlayheading">FAMA.</h1>
+                <h3 class="overlaytext">Makeup Collection</h3>
+            </div>
+            <hr>
+            <div class="row mt-5">
+                <div class="col-md-4 text-center">
+                    <i class="fa fa-flask"></i>
+                    <h4>Natural Ingredients</h4>
+                    <p>We prioritize using natural and organic ingredients in our products to ensure the best for
+                        your skin.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fa fa-heart"></i>
+                    <h4>Love and Care</h4>
+                    <p>Each product is crafted with love and care to provide you with the highest quality.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fa fa-globe"></i>
+
+                    <h4>Worldwide Shipping</h4>
+                    <p>No matter where you are, we bring our products to your doorstep with our reliable shipping
+                        services.</p>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-left">
+            <div class="row">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-3 font-weight-bold">
+                        FAMA.</h5>
+                    <p>"Unveil Your Natural Radiance" Because beauty begins with a glow from within. Enhancing Your
+                        Elegance, Naturally" Let your inner beauty shine through.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-5">
+                    <a href="index.html" class="text-white" style="text-decoration: none;">Home</a><br>
+                    <a href="about.html" class="text-white" style="text-decoration: none;">About</a><br>
+                    <a href="product.html" class="text-white" style="text-decoration: none;">Product</a>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-3 font-weight-bold">Follow Us</h5>
+                    <a class="mx-1" href="https://www.facebook.com/share/cNo6ByeeriyV6hnc/?mibextid=qi2Omg"><img
+                            src="images/facebook-icon.png" alt="fb logo" width="30"></a>
+
+                    <a class="mx-2" href="https://www.instagram.com/fama_cosmetics13?igsh=aWZqNmNja2FqcnFh"><img
+                            src="images/insta-icon.png" alt="insta logo" width="20"></a>
+                    <a class="mx-2" href="#"><img
+                            src="images/linkdin icon.png" alt="linkdin logo" width="20"></a>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-3 font-weight-bold"> Contact</h5>
+                    <p>
+                        <i class="fas fa-home mr-3"></i> Gulshan-e-iqbal,block2,Karachi
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i> almaszainab90@gmail.com
+                    </p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i> 03302527736
+                    </p>
+                </div>
+                <hr class="mb-4">
+                <div class="bg-dark row align-items-center">
+                    <div class="col-md-12 col-lg-12">
+                        <p>copyright @2024 All right reserved by:
+                            <a href="#"
+                                style="text-decoration: none;"><br>
+                                <strong>FAMA Cosmetics </strong>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</body>
+
+</html>
