@@ -104,6 +104,14 @@
     “ About Us Section” */
 
 /* About Section */
+.section{
+    background-image: url(assets/background.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 h1 {
     color: crimson;
     font-family: signika;
