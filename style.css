@@ -176,7 +176,7 @@ h1 {
     align-items: center;
     text-align: center;
     color: white;
-    padding: 20px;
+
 }
 
 .background-image h1 {
@@ -339,31 +339,19 @@ img:hover {
     padding: 32px !important;
 }
 
+.contact-card-title{
+    text-align: justify;
+    font-size: 1rem !important;
+}
+
 .contact-card-img {
     border-radius: 15px !important;
+    height: 63vh;
+    align-items: center;
 }
 
-h2 .contact-card-title{
-    font-size: 2.25rem;
-    font-family: signika;
-    font-weight: bold;
-    color: rgb(222, 0, 74);
-}
-
-h4 .contact-card-title{
-    font-size: 2.25rem;
-    font-family: signika;
-    font-weight: bold;
-    color: rgb(222, 0, 74);
-}
-
-.cardcontent {
+.contact-card-content {
     font-size: 1.4rem !important;
-}
-
-h5 .contact-card-title{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
 }
 
 .form-control {
