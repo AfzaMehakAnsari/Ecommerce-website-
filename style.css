@@ -52,27 +52,27 @@
 
 /* Carousel */
 .bgimage-1 {
-    background-image: url(assets/teenbeauty.jpg);
+    background-image: url(assets/teenbeauty.webp);
     background-position: center;
 }
 
 .bgimage-2 {
-    background-image: url(assets/lipcolor.jpg);
+    background-image: url(assets/lipcolor.webp);
     background-position: left;
 }
 
 .bgimage-3 {
-    background-image: url(assets/foundation.jpg);
+    background-image: url(assets/foundation.webp);
     background-position: center;
 }
 
 .bgimage-4 {
-    background-image: url(assets/eyeshades.jpg);
+    background-image: url(assets/eyeshades.webp);
     background-position: center;
 }
 
 .bgimage-5 {
-    background-image: url(assets/brushes.jpg);
+    background-image: url(assets/brushes.webp);
     background-position: center;
 }
 
@@ -105,7 +105,7 @@
 
 /* About Section */
 .section{
-    background-image: url(assets/background.jpg);
+    background-image: url(assets/background.webp);
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -140,7 +140,7 @@ h1 {
 }
 
 .overlay {
-    background-image: url(assets/overlay.jpg);
+    background-image: url(assets/overlay.webp);
     height: 50vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -300,11 +300,11 @@ h1 {
     font-weight: bold;
 }
 
-img {
+.card-img-top {
     transition: all 0.3s;
 }
 
-img:hover {
+.card-img-top:hover {
     transform: scale(1.10);
     border-radius: 10px;
 }
